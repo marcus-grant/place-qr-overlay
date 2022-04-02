@@ -23,4 +23,4 @@ This is a [userScript](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/
 
 ## Developer Notes
 
-The overlay works by finding the shadow DOM element where the r/place canvas takes place. Then the `qroverlay.png` I've created is inserted.
+The overlay works by finding the shadow DOM element where the r/place canvas takes place. Then the `qroverlay.png` I've created is inserted. The overlay image was created by taking the QR code image and making it 3px wide and tall for each individual tile, putting a mask over it so only the center pixel is visible through it, then subtracting the mask from the 3x larger QR code image. What you get is a transparency where only the middle of the tile has colors visible corresponding to the QR code.
