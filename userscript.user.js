@@ -9,3 +9,22 @@
 // @grant        none
 // @license      GPL-3.0
 // ==/UserScript==
+if (window.top !== window.self) {
+    window.addEventListener('load', () => {
+      document
+        .getElementsByTagName("mona-lisa-embed")[0]
+        .shadowRoot
+        .children[0]
+        .getElementsByTagName("mona-lisa-canvas")[0]
+        .shadowRoot
+        .children[0]
+        .appendChild(
+          (function () {
+              const img = document.createElement("img");
+              img.src = "https://github.com/marcus-grant/place-qr-overlay/raw/main/qroverlay.png";
+              img.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
+              console.log(img);
+              return img;
+          })())
+  }, false);
+}
