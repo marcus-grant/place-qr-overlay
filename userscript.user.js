@@ -22,7 +22,8 @@ if (window.top !== window.self) {
           (function () {
               const img = document.createElement("img");
               img.src = "https://github.com/marcus-grant/place-qr-overlay/raw/main/qroverlay.png";
-              img.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
+              // img.style = "position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;";
+              img.style = "position: absolute;left: 1859px;top: 618px;image-rendering: pixelated;width: 33px;height: 33px;";
               console.log(img);
               return img;
           })())
