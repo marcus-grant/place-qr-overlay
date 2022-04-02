@@ -1,4 +1,8 @@
-# r/Place Overlay User Script
+# r/Place Overlay User Script (for r/PlaceQRCode)
+
+## r/PlaceQRCode
+
+This is a fork of the r/Place Overlay user script I created to help communities maintain a coherent image on r/Place. Here you'll find all you need to get an overlay of the correct image on [r/Place](https://www.reddit.com/r/place/) to correct errors and sabotage. Note, this is not a bot, I specifically made this a browser plugin so it requires user interaction to be used.
 
 ## Introduction
 
